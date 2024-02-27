@@ -1,3 +1,3 @@
 # Kokoa Clone 2024 update
 
-CSS got so much better.
+CSS and HTML got better.
