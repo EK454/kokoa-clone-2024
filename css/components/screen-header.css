@@ -1,0 +1,53 @@
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: var(--horizontal-space);
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.screen-header__icons {
+    display: flex;
+    align-items: center; /* Ensure alignment if not already set */
+}
+
+.screen-header__icons span {
+    position: relative; /* Add this to provide positioning context */
+    margin-right: 5px;
+    display: inline-flex; /* This ensures icons and notifications are centered to each other */
+    align-items: center; /* Vertically center the icon and notification */
+    justify-content: center; /* Horizontally center the content, if necessary */
+}
+
+@keyframes rotateGear {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-gear:hover {
+animation: rotateGear 4s linear infinite;
+}
+
+.screen-header__icons span:last-child {
+    margin-right: 0px;
+}
+
+.rednotification {
+    position: relative;
+    top: -10px;
+    right: -30px;
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}

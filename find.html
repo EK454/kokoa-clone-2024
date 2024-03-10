@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Talk</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="status-bar">
+        <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>     
+    </div>
+        <div class="status-bar__column">
+        <span>18:43</span>
+    </div>
+        <div class="status-bar__column">
+        <span>80%</span>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-bolt"></i>
+    </div>
+</div>
+
+<header class="screen-header">
+<h1 class="screen-header__title">Find</h1>
+<div class="screen-header__icons">
+ <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+ <span><span class="rednotification"></span><i class="fa-solid fa-gear fa-lg"></i></span>
+</div>
+</header>
+
+<main class="main-screen">
+    <div class="icon-row">
+        <div class="icon-row__icons"><i class="fa-solid fa-qrcode"></i>
+            <span>QR Code</span></div>
+        <div class="icon-row__icons"><i class="fa-regular fa-address-book"></i>
+            <span>Add by Contacts</span></div>
+        <div class="icon-row__icons"><i class="fa-solid fa-fingerprint"></i>
+            <span>Add by ID</span></div>
+        <div class="icon-row__icons"><i class="fa-regular fa-envelope"></i>
+            <span>Invite</span></div>
+    </div>
+    <div class="recommended-friends">
+    <h6 class="recommended-friends__title">Recommended Friends</h6>
+    <span>You have no recommended friends.</span>
+    </div>
+    <div class="open-chat">
+        <div class="open-chat__header">
+            <h4>Open Chat</h4>
+            <span>Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xl"></i></span>
+        </div>
+        <div class="open-post">
+        <div class="open-post__column">
+            <h5 class="open-post__title">#Your Voice</h5>
+            <h6 class="open-post__hashtags">#terafty #koreanmovie #koreanfilm</h6>
+            <div class="open-post__members">
+                <img src="https://yt3.googleusercontent.com/sJBsflGCTNM7jLr2oieyV0WgSjq-_FNod7LnAYjv82NwsyqM6jCqUymZJCMmQDUxXwEJxkvH7-8=s176-c-k-c0x00ffffff-no-rj" />
+                <span class="open-post__member-count">1857 members</span>
+                <div class="divider"></div>
+                <span class="open-post__member-status">Active</span>
+            </div>
+        </div>
+        <div class="open-post__column">
+            <div class="open-post__photo">
+            <img src="https://terafty.s3.ap-northeast-2.amazonaws.com/streaming/2024/2/23/1708668691887-YV9942.png">
+            <div class="open-post__heart-count"><i class="fa-solid fa-heart fa-xs"></i> <span>788</span></div>
+        </div>
+    </div>
+</main>
+
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">15</span><i class="fa-regular fa-comment fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+        <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__ellipsis"></span><i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+    </ul>
+</nav>
+
+<div id="no-mobile">
+    <span>Your screen is too big!</span>
+</div>
+
+    <script src="https://kit.fontawesome.com/8824bdd090.js" crossorigin="anonymous"></script>
+</body>
+</html>
