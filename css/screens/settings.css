@@ -1,3 +1,8 @@
+.settings-screen {
+    height: calc(100vh - 70px); /* Subtract the navigation bar's height */
+    overflow-y: auto; /* Add scrolling to the friends list */
+}
+
 .settings__setting {
     padding: 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

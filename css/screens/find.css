@@ -1,3 +1,8 @@
+.find-screen {
+    height: calc(100vh - 70px); /* Subtract the navigation bar's height */
+    overflow-y: auto; /* Add scrolling to the friends list */
+}
+
 .recommended-friends {
     padding-top: 20px;
     border-top: var(--main-border);

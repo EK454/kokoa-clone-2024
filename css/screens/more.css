@@ -2,6 +2,11 @@
     margin-top: 35px;
 }
 
+.more-screen {
+    height: calc(100vh - 70px); /* Subtract the navigation bar's height */
+    overflow-y: auto; /* Add scrolling to the friends list */
+}
+
 .more-suggestions {
     margin-top: 50px;
     border-top: var(--main-border);

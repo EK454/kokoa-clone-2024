@@ -65,7 +65,7 @@
     padding: 0px var(--horizontal-space)
 }
 
-.scrollable-container {
-    max-height: 90vh; /* 90% of the viewport height */
-    overflow-y: auto; /* Scrollbar appears automatically if needed */
+.friends-screen {
+    height: calc(100vh - 70px); /* Subtract the navigation bar's height */
+    overflow-y: auto; /* Add scrolling to the friends list */
 }
