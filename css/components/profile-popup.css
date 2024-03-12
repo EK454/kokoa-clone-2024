@@ -16,6 +16,7 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    width: 80vw;
     max-width: 150px; /* Maximum width, adjust as necessary */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better focus */
     position: relative;
