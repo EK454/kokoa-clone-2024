@@ -1,5 +1,6 @@
 .user-component {
     justify-content: space-between;
+    margin-bottom: 11px;
 }
 
 .user-component,
@@ -57,4 +58,30 @@
 .user-component__time {
     margin-bottom: 10px;
     display: block;
+}
+
+.friends-list {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+}
+
+.friends-list .user-component {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+}
+
+.friends-list .user-component__avatar {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Prevent the avatar from shrinking */
+}
+
+.friends-list .user-component__text {
+    flex-grow: 1; /* Takes up the remaining space in the flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the title and subtitle within the text div */
 }

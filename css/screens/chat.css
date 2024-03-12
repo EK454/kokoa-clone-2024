@@ -73,6 +73,7 @@
 .message__info {
     display: flex;
     align-items: flex-end;
+    margin-top: 2px;
 }
 
 .message__bubble {

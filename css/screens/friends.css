@@ -29,6 +29,14 @@
     color: rgba(0, 0, 0, 0.6)
 }
 
+.friends-list__header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+
 @keyframes hideSplashScreen {
     from {
         opacity: 1;        

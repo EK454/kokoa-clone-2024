@@ -1,4 +1,4 @@
-.screen-header{
+.screen-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,7 @@
     display: flex;
     align-items: center; /* Ensure alignment if not already set */
 }
+
 
 .screen-header__icons span {
     position: relative; /* Add this to provide positioning context */
