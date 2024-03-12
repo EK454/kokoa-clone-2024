@@ -29,12 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Adjusted to accept the userComponent instead of just the avatar
 function showProfilePopup(userComponent) {
-  // No change needed to get userName and userSubtitle
   var userName = userComponent.querySelector('.user-component__title').textContent;
-  var userSubtitle = userComponent.querySelector('.user-component__subtitle').textContent;
+  
+  // Safe check for subtitle element
+  var userSubtitleElement = userComponent.querySelector('.user-component__subtitle');
+  var userSubtitle = userSubtitleElement ? userSubtitleElement.textContent : '';
 
-  // Changes to get the avatar src from within the userComponent
-  var userAvatarSrc = userComponent.querySelector('.user-component__avatar').src;
+  // Safe check for avatar image
+  var userAvatar = userComponent.querySelector('.user-component__avatar');
+  var userAvatarSrc = userAvatar ? userAvatar.src : '';
 
   // Getting the popup elements remains unchanged
   var profilePopup = document.getElementById('profile-popup');
@@ -45,7 +48,6 @@ function showProfilePopup(userComponent) {
   // Populate the pop-up with this user's information
   popupTitle.textContent = userName;
   popupInfo.textContent = userSubtitle;
-  // Updated to use userAvatarSrc
   popupAvatar.src = userAvatarSrc;
 
   // Making the pop-up visible remains unchanged

@@ -1,20 +1,30 @@
 .more-screen .icon-row {
-    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 13px; /* Space between items */
+    margin-top: 22px;
+}
+
+.more-screen .icon-row__icons {
+    flex: 1 1 22%; /* Grow to fill space, basis at 22% allows 4 items per row */
+    max-width: 22%; /* Maximum width of each icon to fit 4 in a row */
+    margin-bottom: 3px;
 }
 
 .more-screen {
-    height: calc(100vh - 70px); /* Subtract the navigation bar's height */
+    height: calc(120vh - 70px); /* Subtract the navigation bar's height */
     overflow-y: auto; /* Add scrolling to the friends list */
 }
 
 .more-suggestions {
-    margin-top: 50px;
+    margin-top: 10px;
     border-top: var(--main-border);
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 .more-suggestions__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .more-suggestions__icons {
@@ -42,4 +52,8 @@
 .more-suggestions__icon-image i {
     font-size: 32px;
     color: white;
+}
+
+.more-screen .user-component {
+    margin-bottom: 35px;
 }

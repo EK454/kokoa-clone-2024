@@ -1,6 +1,6 @@
 .settings-screen {
-    height: calc(100vh - 120px); /* Subtract the navigation bar's height */
-    overflow-y: auto; /* Add scrolling to the friends list */
+    height: calc(130vh - 120px); /* Subtract the navigation bar's height */
+    overflow-y: auto;
 }
 
 .settings__setting {
