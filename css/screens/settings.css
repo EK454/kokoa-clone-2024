@@ -16,3 +16,34 @@
 .settings__setting-column:last-child {
     opacity: 0.5;
 }
+
+.settings__secondsetting {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settings__secondsetting i {
+    opacity: 0.9;
+    margin-right: 17px;
+    font-size: 22px;
+}
+
+.list-separator {
+    margin: 55px 0; /* Adjust top and bottom margin as needed */
+    border-bottom: 1.8px solid rgba(0, 0, 0, 0.22); /* Creates a border line. Adjust color and thickness as needed */
+    height: 0; /* Keep the div itself visually invisible, using it just for spacing */
+}
+
+.notification-badge {
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.65em;
+    padding: 2px 5px;
+    margin-left: 5px;
+    vertical-align: super;
+}
