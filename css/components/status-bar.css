@@ -7,7 +7,7 @@
     left: 0; /* Aligns the bar to the left side */
     right: 0; /* Ensures the bar stretches to the right side */
     z-index: 1000; /* Ensures the bar stays above other content */
-    background-color: rgba(231, 222, 222, 0.24);
+    background-color: rgb(240, 240, 240);
 }
 
 .status-bar__column {
