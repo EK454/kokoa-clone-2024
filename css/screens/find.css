@@ -38,17 +38,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px; 
+}
+
+.open-post__column {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
 }
 
 .open-post__title {
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 7px;
+    
 }
 
 .open-post__hashtags {
     text-transform: uppercase;
     opacity: 0.6;
+}
+
+.open-post__title,
+.open-post__hashtags {
+    margin-bottom: 5px; /* Spacing between the title and hashtags */
 }
 
 .open-post__members {

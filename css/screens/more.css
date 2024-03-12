@@ -29,13 +29,19 @@
 
 .more-suggestions__icons {
     display: flex;
+    justify-content: space-between; /* Distributes space evenly between items */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 5px; /* Space between items */
 }
 
 .more-suggestions__icon {
-    margin-right: 30px;
+    flex-basis: calc(25% - 10px); /* Adjusts the basis for 4 items per row minus the gap */
+    flex-grow: 1;
+    max-width: calc(25% - 10px); /* Prevents growing beyond 4 items per row */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3px; /* Space below each icon */
 }
 
 .more-suggestions__icon-image {
@@ -52,6 +58,13 @@
 .more-suggestions__icon-image i {
     font-size: 32px;
     color: white;
+}
+
+.more-suggestions__icon-text {
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Keeps the content from spilling out of the container */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
+    font-size: 14px;
 }
 
 .more-screen .user-component {
