@@ -79,9 +79,12 @@
     flex-shrink: 0; /* Prevent the avatar from shrinking */
 }
 
-.friends-list .user-component__text {
-    flex-grow: 1; /* Takes up the remaining space in the flex container */
+.friends-list .user-component.user-trigger {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically centers the title and subtitle within the text div */
+    flex-direction: row; /* Ensure items line up horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start of the container */
+    flex-grow: 1; /* Allow the text container to fill the available space */
+    margin-left: 2px; /* Adjust spacing between avatar and text */
 }
+

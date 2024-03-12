@@ -1,11 +1,11 @@
 .settings-screen {
-    height: calc(100vh - 70px); /* Subtract the navigation bar's height */
+    height: calc(100vh - 120px); /* Subtract the navigation bar's height */
     overflow-y: auto; /* Add scrolling to the friends list */
 }
 
 .settings__setting {
     padding: 20px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.7px solid rgba(214, 205, 205, 0.349);
     font-size: 19px;
     display: flex;
     align-items: center;

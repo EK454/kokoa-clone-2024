@@ -1,25 +1,25 @@
-// Run this script when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   // Get the pop-up element
   var popup = document.getElementById('profile-popup');
   
-  // Get all the avatars
-  var avatarImages = document.querySelectorAll('.user-component__avatar');
+  // Change: Get all user components instead of just avatars
+  var userComponents = document.querySelectorAll('.user-component');
 
-  // Attach a click event listener to each avatar image
-  avatarImages.forEach(avatar => {
-      avatar.addEventListener('click', () => {
-          showProfilePopup(avatar);
+  // Attach a click event listener to each user component
+  userComponents.forEach(component => {
+      component.addEventListener('click', () => {
+          // Pass the user component to the function
+          showProfilePopup(component);
       });
   });
 
-  // Get the close button and attach an event listener to close the pop-up
+  // Close button functionality remains unchanged
   var closeButton = document.querySelector('.close');
   closeButton.addEventListener('click', () => {
       popup.style.display = 'none';
   });
 
-  // Event listener for clicking outside of the pop-up content to also close
+  // Clicking outside to close functionality remains unchanged
   window.addEventListener('click', (event) => {
       if (event.target == popup) {
           popup.style.display = 'none';
@@ -27,13 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function showProfilePopup(avatar) {
-  // Get the parent container of the clicked avatar
-  var userComponent = avatar.closest('.user-component');
+// Adjusted to accept the userComponent instead of just the avatar
+function showProfilePopup(userComponent) {
+  // No change needed to get userName and userSubtitle
   var userName = userComponent.querySelector('.user-component__title').textContent;
   var userSubtitle = userComponent.querySelector('.user-component__subtitle').textContent;
 
-  // Get the pop-up element and its components
+  // Changes to get the avatar src from within the userComponent
+  var userAvatarSrc = userComponent.querySelector('.user-component__avatar').src;
+
+  // Getting the popup elements remains unchanged
   var profilePopup = document.getElementById('profile-popup');
   var popupTitle = profilePopup.querySelector('.profile-content h4');
   var popupInfo = profilePopup.querySelector('.profile-content p');
@@ -42,9 +45,10 @@ function showProfilePopup(avatar) {
   // Populate the pop-up with this user's information
   popupTitle.textContent = userName;
   popupInfo.textContent = userSubtitle;
-  popupAvatar.src = avatar.src; // Assumes the avatar's src is what you want in the pop-up
+  // Updated to use userAvatarSrc
+  popupAvatar.src = userAvatarSrc;
 
-  // Make the pop-up visible
+  // Making the pop-up visible remains unchanged
   profilePopup.style.display = 'flex';
 }
 
