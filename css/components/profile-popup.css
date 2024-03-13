@@ -13,18 +13,21 @@
   
 .profile-content {
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     text-align: center;
-    width: 80vw;
+    width: auto; /* Adjusted for flexibility */
+    margin: auto; /* Helps center the content vertically and horizontally */
+    width: 150px;
+    height: auto;
     max-width: 150px; /* Maximum width, adjust as necessary */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better focus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better focus */
     position: relative;
 }
 
   .profile-popup .profile-content {
-    max-width: 400px; /* Adjust as necessary */
-    width: 90%; /* Gives some responsiveness to the width */
+    max-width: 350px; /* Adjust as necessary */
+    width: 100%; /* Gives some responsiveness to the width */
     margin: auto; /* Centers the pop-up on the screen */
 }
   
@@ -62,12 +65,12 @@
 .close {
     position: absolute;
     top: -10px; /* Adjusts the position to be slightly outside the container */
-    right: -10px; /* Adjusts the position to be slightly outside the container */
+    right: -12px; /* Adjusts the position to be slightly outside the container */
     background: white;
     border-radius: 50%;
-    padding: 5px 5px; /* Adds some space around the 'X' */
-    line-height: 0.8; /* Adjusts line height to prevent extra vertical space */
-    box-shadow: -2px 2px 5px rgba(0,0,0,0.1); /* Optional: adds slight shadow for depth */
+    padding: 10px 5px; /* Adds some space around the 'X' */
+    line-height: 0.2; /* Adjusts line height to prevent extra vertical space */
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2); /* Optional: adds slight shadow for depth */
     cursor: pointer;
     font-size: 25px;
     z-index: 1001; /* Ensures it's above other elements */
