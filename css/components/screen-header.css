@@ -2,28 +2,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 15px 15px 0px;
     padding-top: var(--horizontal-space);
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .screen-header__title {
     font-size: 30px;
     font-weight: 600;
+    margin-left: 25px;
 }
 
 .screen-header__icons {
     display: flex;
     align-items: center; /* Ensure alignment if not already set */
+    justify-content: flex-end; /* Align items to the end (right side) */
+    margin-right: 15px;
 }
 
 
 .screen-header__icons span {
-    position: relative; /* Add this to provide positioning context */
-    margin-right: 5px;
-    display: inline-flex; /* This ensures icons and notifications are centered to each other */
+    display: flex; /* Use flex to center the content inside span */
+    justify-content: space-evenly;
     align-items: center; /* Vertically center the icon and notification */
-    justify-content: center; /* Horizontally center the content, if necessary */
+    flex-shrink: 0; /* Prevent the icons from shrinking */
+    position: relative; /* For positioning the rednotification */
+    margin: 0 8px;
+    gap: -15px;
+}
+
+.screen-header__icons a {
+    padding: 0; /* Remove padding for anchor to make it consistent with other icons */
+    display: flex; /* Ensure it behaves like other flex items */
+}
+
+.screen-header__icons span:first-child {
+    margin-right: 5px; /* No margin on the left side of the first icon */
+}
+
+
+/* Specifically target the span that wraps the gear icon with the notification */
+.screen-header__icons span:last-child {
+    padding-right: 0; /* Removes extra padding on the right */
+    margin-left: -12px; /* Pull the gear icon slightly to the left */
+    padding-left: -15px;
+    margin-right: 8px; /* Pull the gear icon slightly to the left */
 }
 
 @keyframes rotateGear {
@@ -39,9 +63,7 @@
 animation: rotateGear 4s linear infinite;
 }
 
-.screen-header__icons span:last-child {
-    margin-right: 0px;
-}
+
 
 .rednotification {
     position: relative;
