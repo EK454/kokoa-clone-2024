@@ -6,19 +6,20 @@
     padding-top: var(--horizontal-space);
     margin-bottom: 15px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .screen-header__title {
     font-size: 30px;
     font-weight: 600;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .screen-header__icons {
     display: flex;
     align-items: center; /* Ensure alignment if not already set */
     justify-content: flex-end; /* Align items to the end (right side) */
-    margin-right: 15px;
+    margin-right: 0px;
 }
 
 
