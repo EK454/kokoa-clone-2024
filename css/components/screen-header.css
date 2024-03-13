@@ -64,6 +64,22 @@
 animation: rotateGear 4s linear infinite;
 }
 
+@keyframes colorPulse {
+    0% {
+      color: initial;
+    }
+    50% {
+      color: rgb(226, 89, 65); /* Highlight color */
+      opacity: 0.8;
+    }
+    100% {
+      color: initial;
+    }
+  }
+
+  .screen-header__icons .fa-comment-dots {
+    animation: colorPulse 2.2s infinite;
+  }
 
 
 .rednotification {

@@ -27,7 +27,7 @@
 <h1 class="screen-header__title">Chats</h1>
 <div class="screen-header__icons">
  <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
- <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
+ <span><i class="fa-regular fa-comment-dots fa-lg" onclick="openPopup()"></i></span>
  <span><i class="fa-solid fa-music fa-lg"></i></span>
  <span><span class="rednotification"></span><i class="fa-solid fa-gear fa-lg"></i></a></span>
 </div>
@@ -85,6 +85,27 @@
 <div id="no-mobile">
     <span>Your screen is too big!</span>
 </div>
+
+
+<!--Pop-up-->
+<div id="chatPopup" class="chat-popup">
+    <div class="chat-popup-content"> <!-- This is the container for the content -->
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Select Chat Mode</h2>
+      <button class="chat-option-button"><i class="fa-regular fa-comment fa-2x"></i><span class="button-text">Regular Chat</span></button>
+      <button class="chat-option-button"><i class="fa-solid fa-mask fa-2x"></i><span class="button-text">Secret Chat</span></button>
+    </div>
+  </div>
+
+<script>
+    function openPopup() {
+  document.getElementById('chatPopup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('chatPopup').style.display = 'none';
+}
+    </script>
 
     <script src="https://kit.fontawesome.com/8824bdd090.js" crossorigin="anonymous"></script>
     <script src="live-time.js"></script>
