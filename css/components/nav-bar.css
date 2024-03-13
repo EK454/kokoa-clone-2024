@@ -16,17 +16,15 @@
     color: #2F363E;
 }
 
-@keyframes notificationAnimation {
-    0% {
-        transform: none;
+@keyframes notificationshakeAnimation {
+    0%, 100% {
+        transform: translateX(0);
     }
-
-    50%{
-        transform: translateY(-5px) rotateX(180deg);
+    25%, 75% {
+        transform: translateX(-1px);
     }
-
-    100%{
-        transform: none;
+    50% {
+        transform: translateX(1px);
     }
 }
 
@@ -34,8 +32,9 @@
     position: absolute;
     left: 20px;
     bottom: 15px;
-    animation: notificationAnimation 2s infinite;
+    animation: notificationshakeAnimation 3s infinite;
 }
+
 
 @keyframes appearBtnAnimation {
     from {

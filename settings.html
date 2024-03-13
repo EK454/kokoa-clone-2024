@@ -110,6 +110,19 @@
             </li>
         </ul>
 
+        <div id="settings__signout">
+            <button onclick="confirmSignOut()">Sign Out</button>
+        </div>
+        <!-- Pop-up Overlay for Sign Out Confirmation -->
+<div id="signOutConfirmationPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <h2>Are you sure you want to sign out?</h2>
+        <button id="yesButton" onclick="signOut()">Yes</button>
+        <button onclick="hideConfirmation()">No</button>
+    </div>
+</div>
+
+
 <div class="main-screen settings-screen__top">
     <span></span>
 </div>
@@ -130,5 +143,6 @@
 
     <script src="https://kit.fontawesome.com/8824bdd090.js" crossorigin="anonymous"></script>
     <script src="live-time.js"></script>
+    <script src="signout-message.js"></script>
 </body>
 </html>
