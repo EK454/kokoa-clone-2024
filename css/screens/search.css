@@ -1,0 +1,183 @@
+.recent__search {
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    padding: 10px 5px;
+    margin: 5px auto 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    overflow: hidden;
+    max-width: 95%;
+    box-sizing: border-box;
+}
+
+.recent__search-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 5px;
+}
+
+.recent__search-list {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.recent__search-column {
+    flex: 1; /* Allows each item to grow */
+    flex-shrink: 0; /* Prevents the items from shrinking too much */
+    margin: 5px;
+    padding: 8px;
+    box-sizing: border-box; /* Includes padding in width */
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0; /* Allows text to overflow */
+}
+
+.recent__search-column img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.recent__search-column span {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Suggested Shopping */
+.search-screen__suggested-shopping {
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    padding: 10px 5px;
+    margin: 5px auto 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    overflow: hidden;
+    max-width: 95%;
+    box-sizing: border-box;
+}
+
+.search-screen__suggested-shopping-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 5px;
+}
+
+.search-screen__suggested-shopping-list {
+    list-style: none;
+    padding: 15px 5px 5px 5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping of items */
+    gap: 10px;
+}
+
+.suggested-shopping-column {
+    flex: 1;
+    flex-basis: calc(25% - 10px); /* Set the flex-basis to 25% minus the gap */
+    margin: 5px 0;
+    padding: 8px;
+    box-sizing: border-box; 
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0; /* Override the default min-width */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping of text */
+    text-overflow: ellipsis; /* Add ellipsis to overflowed text */
+}
+
+.suggested-shopping-column img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+.suggested-shopping-column span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.search-screen__hot-emoticon {
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px auto 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    overflow: hidden;
+    max-width: 95%;
+    box-sizing: border-box;
+}
+
+.search-screen__hot-emoticon ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap; /* Keep items in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+.search-screen__hot-emoticon-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 5px;
+}
+
+.search-screen__hot-emoticon-column {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-top: 15px;
+}
+
+.search-screen__hot-emoticon-column img {
+    width: 85px;
+    height: 85px;
+    background-color: #F5F5F5;
+    margin-bottom: 5px;
+    border: none;
+    padding: 10px;
+    display: block; /* fill the container */
+    object-fit: cover; 
+}
+
+
+.search-screen__hot-emoticon-column span {
+    font-size: 13px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    margin-top: 5px; /* Space between image and text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-align: center;
+}
+

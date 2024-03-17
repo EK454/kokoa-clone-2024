@@ -14,6 +14,7 @@
 @import "components/no-mobile.css";
 @import "components/profile-popup.css";
 @import "components/chat-popup.css";
+@import "components/search-header.css";
 
 /* screens */
 @import "screens/signin.css";
@@ -22,6 +23,7 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+@import "screens/search.css";
 
 body {
    color: #2F363E; 

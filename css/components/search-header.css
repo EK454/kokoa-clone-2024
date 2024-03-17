@@ -1,0 +1,97 @@
+.search-header {
+    padding: 15px;
+    margin-bottom: 11px;
+    margin-top: 7px;
+    max-width: 330px;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    margin-left: auto; /* Center the header horizontally */
+    margin-right: auto; /* Center the header horizontally */
+}
+
+
+.search-header__input {
+    font-size: 18px;
+    font-weight: 500; 
+    color: #A9A9A9; 
+    border: none;
+    background-color: transparent;
+    width: 100%; /* Full width of its container */
+    text-align: left;
+}
+
+.search-header__input:focus {
+    outline: none;
+}
+
+.search-header__title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #A9A9A9;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+.search-header__column {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content within the column */
+}
+
+.search-header__column:first-child {
+    margin-left: 7px;
+    display: flex;
+    font-size: 9px;
+    justify-content: flex-start;
+}
+
+.search-header__column:nth-child(2) {
+    text-align: center
+}
+
+.search-header__column:last-child {
+    font-size: 15px;
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+
+.search-header__column span:last-child {
+    margin-left: 10px;
+}
+
+.search-screen__notification {
+    padding: 7px 3px;
+    margin: 12px auto;
+    max-width: 330px;
+    width: 100%;
+    min-height: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
+.search-screen__bell .fa-bell {
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 5px;
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 1px;
+}
+
+.search-screen__notification--message {
+    font-size: 15px;
+    font-weight: 600;
+    flex-grow: 1; /* Allow the message to grow and take up available space if needed */
+    text-align: center;
+}
+
