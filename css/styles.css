@@ -16,7 +16,6 @@
 @import "components/chat-popup.css";
 @import "components/search-header.css";
 @import "components/channel-header.css";
-@import "components/wifi-signal.css";
 
 /* screens */
 @import "screens/signin.css";
