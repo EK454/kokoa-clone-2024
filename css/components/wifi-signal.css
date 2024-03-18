@@ -1,0 +1,59 @@
+@keyframes wifiSignal {
+    0%, 100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes wifiFairSignal {
+    0%, 19.9%, 30.1%, 100% {
+      opacity: 0;
+    }
+    20%, 30% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes wifiFullSignal {
+    0%, 30.9%, 83.4%, 100% {
+      opacity: 0;
+    }
+    31%, 83.3% {
+      opacity: 1;
+    }
+  }
+  
+  #wifi-weak {
+    animation: wifiSignal 6s infinite;
+  }
+  
+  #wifi-fair {
+    animation: wifiFairSignal 6s infinite;
+  }
+  
+  #wifi-full {
+    animation: wifiFullSignal 6s infinite;
+  }
+
+.status-bar__column:first-child {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start */
+  }
+  
+  #wifi-animation {
+    position: relative;
+    width: 1em;
+    height: 1em; 
+    display: inline-block; /* Keep inline with text */
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  #wifi-weak, #wifi-fair, #wifi-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }

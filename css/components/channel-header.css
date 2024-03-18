@@ -1,0 +1,23 @@
+.channel-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+.channel-header__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.channel-header__column:last-child {
+    margin-left: 7px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #A1A1A1;
+    /* transform: translateY(1px); */
+}

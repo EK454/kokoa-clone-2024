@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends - Kokoa Talk</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/73b470f529.css" crossorigin="anonymous">
 </head>
 <body>
     <div id="status-bar">
         <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>     
+        <div id="wifi-animation">
+            <i class="fa-solid fa-wifi-weak" id="wifi-weak"></i>
+            <i class="fa-solid fa-wifi-fair" id="wifi-fair"></i>
+            <i class="fa-solid fa-wifi" id="wifi-full"></i>
+        </div>
     </div>
         <div class="status-bar__column">
         <span id="time-display"></span>
@@ -63,7 +68,7 @@
         </div>
         <div class="user-component__column">
             <div>
-        <span>2</span>
+        <span>5</span>
         <i class="fa-solid fa-chevron-right fa-xs"></i>
             </div>
     </div>
@@ -126,6 +131,8 @@
 
   <script src="profile-popup.js"></script>
   <script src="live-time.js"></script>
+  <script src="wifi-signal.js"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/73b470f529.css" crossorigin="anonymous">
 
 </body>
 </html>

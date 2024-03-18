@@ -1,3 +1,8 @@
+.search-screen {
+    height: calc(120vh - 70px); /* Subtract the navigation bar's height */
+    overflow-y: auto; /* Add scrolling to the friends list */
+}
+
 .recent__search {
     border: 1px solid #dcdcdc;
     border-radius: 7px;

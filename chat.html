@@ -10,7 +10,11 @@
     <div id="status-bar">
         <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>     
+        <div id="wifi-animation">
+            <i class="fa-solid fa-wifi-weak" id="wifi-weak"></i>
+            <i class="fa-solid fa-wifi-fair" id="wifi-fair"></i>
+            <i class="fa-solid fa-wifi" id="wifi-full"></i>
+        </div>
     </div>
         <div class="status-bar__column">
         <span id="time-display"></span>
@@ -78,8 +82,9 @@
     <span>Your screen is too big! 😒</span>
 </div>
 
-    <script src="https://kit.fontawesome.com/8824bdd090.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/73b470f529.css" crossorigin="anonymous">
     <script src="chat-input.js"></script>
     <script src="live-time.js"></script>
+    <script src="wifi-signal.js"></script>
 </body>
 </html>
