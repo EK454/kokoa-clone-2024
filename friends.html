@@ -56,9 +56,9 @@
             <i class="fa-solid fa-chevron-up fa-xs"></i>
     </div>
 
-    <div class="user-component" onclick="location.href='channel.html';" style="cursor: pointer;">
+    <div class="user-component" onclick="event.stopPropagation(); location.href='channel.html';" style="cursor: pointer;">
         <div class="user-component__column">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" 
+            <img src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4" 
             class="user-component__avatar" user-component__avatar--sm/>
             <div class="user-component__text">
                 <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
@@ -119,7 +119,6 @@
 <div id="profile-popup" class="profile-popup" style="display: none;">
     <!-- Pop-up content -->
     <div class="profile-content">
-      <span class="close" onclick="closeProfilePopup()">&times;</span>
       <img src="https://nypost.com/wp-content/uploads/sites/2/2020/12/yael-most-beautiful-video.jpg?quality=75&strip=all" alt="Profile" class="popup-avatar" />
       <h4 class="popup-username">Username</h4>
       <p class="popup-info">More info here...</p>

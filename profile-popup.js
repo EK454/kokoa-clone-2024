@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the pop-up element
   var popup = document.getElementById('profile-popup');
   
-  // Change: Get all user components instead of just avatars
+  // Get all user components instead of just avatars
   var userComponents = document.querySelectorAll('.user-component');
 
   // Attach a click event listener to each user component
@@ -13,21 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
-  // Close button functionality remains unchanged
-  var closeButton = document.querySelector('.close');
-  closeButton.addEventListener('click', () => {
-      popup.style.display = 'none';
-  });
-
-  // Clicking outside to close functionality remains unchanged
+  // Adjusted to close the pop-up when clicking outside
   window.addEventListener('click', (event) => {
+      // Check if the click is outside the .profile-content
       if (event.target == popup) {
           popup.style.display = 'none';
       }
   });
 });
 
-// Adjusted to accept the userComponent instead of just the avatar
 function showProfilePopup(userComponent) {
   var userName = userComponent.querySelector('.user-component__title').textContent;
   
@@ -39,7 +33,7 @@ function showProfilePopup(userComponent) {
   var userAvatar = userComponent.querySelector('.user-component__avatar');
   var userAvatarSrc = userAvatar ? userAvatar.src : '';
 
-  // Getting the popup elements remains unchanged
+  // Getting the popup elements
   var profilePopup = document.getElementById('profile-popup');
   var popupTitle = profilePopup.querySelector('.profile-content h4');
   var popupInfo = profilePopup.querySelector('.profile-content p');
@@ -50,12 +44,6 @@ function showProfilePopup(userComponent) {
   popupInfo.textContent = userSubtitle;
   popupAvatar.src = userAvatarSrc;
 
-  // Making the pop-up visible remains unchanged
+  // Making the pop-up visible
   profilePopup.style.display = 'flex';
-}
-
-// Function to close the profile pop-up, linked to the close button in the pop-up HTML
-function closeProfilePopup() {
-  var profilePopup = document.getElementById('profile-popup');
-  profilePopup.style.display = 'none';
 }

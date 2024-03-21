@@ -13,65 +13,51 @@
   
 .profile-content {
     background: white;
-    padding: 15px;
+    padding: 4px; /* Adjust padding to your preference */
     border-radius: 5px;
     text-align: center;
-    width: auto; /* Adjusted for flexibility */
-    margin: auto; /* Helps center the content vertically and horizontally */
-    width: 150px;
-    height: auto;
-    max-width: 150px; /* Maximum width, adjust as necessary */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better focus */
+    width: 79%; /* Fixed width for the profile container */
+    height: 40%; /* Fixed height for the profile container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     position: relative;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-  .profile-popup .profile-content {
-    max-width: 350px; /* Adjust as necessary */
-    width: 100%; /* Gives some responsiveness to the width */
-    margin: auto; /* Centers the pop-up on the screen */
-}
-  
-  .profile-popup .profile-content img {
-    max-width: 100%; /* prevents the image from being wider than the pop-up */
-    max-height: 100%; /* prevents the image from being taller than the pop-up */
-    display: block; /* prevents inline spacing issues */
-    object-fit: contain; /* ensures the aspect ratio is maintained without cropping */
-}
 
 .profile-popup h4 {
     font-weight: bold;
     font-size: 1.5em; /* Adjust size as necessary */
-    padding-top: 15px;
-    margin-bottom: 15px; /* Spacing between the name and status */
+    padding-top: 12px;
+    margin-bottom: 10px; /* Spacing between the name and status */
 }
 
 .profile-popup p {
-    margin-top: 0;
+    margin-top: 3px;
     font-size: 1.2em; /* Adjust size as necessary */
 }
 
-.profile-popup img {
-    max-width: 100%;
-    max-height: auto;
-    object-fit: cover; /* Change to 'contain' if you don't want the image cropped */
-    border-radius: 25px; /* Optional: rounds the corners of the image */
-}
+.profile-content img {
+    width: 175px; /* Ensures the image tries to fill the container */
+    height: 175px; /* Adjusts the height of the image to maintain the container's aspect ratio */
+    border-radius: 35%; /* Rounded corners for the image */
+    object-fit: cover;
+    margin-bottom: 14px;
+  }
+  
 
-
-.profile-popup h4, .profile-popup p {
-    margin: 0 0 10px 0; /* Adds some space below the headings and paragraphs */
-}
-
-.close {
+/* .close {
     position: absolute;
-    top: -10px; /* Adjusts the position to be slightly outside the container */
-    right: -12px; /* Adjusts the position to be slightly outside the container */
+    top: -1px;
+    right: -20px;
     background: white;
     border-radius: 50%;
-    padding: 10px 5px; /* Adds some space around the 'X' */
-    line-height: 0.2; /* Adjusts line height to prevent extra vertical space */
-    box-shadow: -2px 2px 5px rgba(0,0,0,0.2); /* Optional: adds slight shadow for depth */
+    padding: 8px 4px;
+    line-height: 0.2;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     font-size: 25px;
-    z-index: 1001; /* Ensures it's above other elements */
-}
+    z-index: 1001; 
+} */
