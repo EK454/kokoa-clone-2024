@@ -2,6 +2,11 @@
     padding: 13px;
 }
 
+.channel-screen {
+    height: calc(120vh - 70px); /* Subtract the navigation bar's height */
+    overflow-y: auto; /* Add scrolling to the friends list */
+}
+
 .channel-ads {
     display: flex;
     justify-content: space-between;
@@ -13,7 +18,7 @@
 .channel-ad, .more-link {
     color: #A4A4A4;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -29,4 +34,155 @@
     font-size: 10px;
     position: relative;
     top: -1px;
+}
+
+.ad-row__ad-channel-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+
+.ad-channel-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px 5px;
+    padding: 2px 10px;
+    background-color: #F5F5F5;
+    width: 140px;
+    height: 170px; 
+    box-sizing: border-box; /* Padding is included in width/height */
+    border-radius: 5px;
+}
+
+
+.ad-channel-column img {
+    height: 42px;
+    width: 42px;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.ad-channel-column h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ad-channel-column h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: grey;
+    opacity: 0.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+    height: 2.4em;
+    white-space: normal;
+    padding: 2px;
+    }
+
+.ad-channel-add {
+    background-color: #E7E7E7;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ad-channel-column h3, .ad-channel-add {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+.channel__boost-business {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f3f3f3c9;
+    border-radius: 3px;
+    height: 90px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.channel__boost-business-phrase {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.channel__boost-business img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+}
+
+.added-chnnel__list {
+    margin: 40px 0px;
+}
+
+.added-channel__list-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #818181;
+    opacity: 0.8;
+    margin: 15px 0 15px 4px;
+}
+
+.added-channel__list-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 9px 0;
+}
+
+.added-channel__list-row-logo {
+    height: 53px;
+    width: 53px;
+    margin-right: 8px;
+}
+
+.added-channel__list-row-logo img {
+    height: 45px;
+    width: 45px;
+    border: solid 1px;
+    border-color: rgba(199, 194, 194, 0.726);
+    border-radius: 40%;
+    object-fit: contain;
+    transform: translateY(8%);
+}
+
+.title-badge {
+    display: flex;
+    align-items: center;
+}
+
+.added-channel-list-row-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.added-channel__list-row .fa-badge-check {
+    color: #2E89DA;
+    margin-left: 5px;
+    transform: translateY(7%);
+}
+
+.added-channel__list-row-slogan {
+    font-size: 15px;
+    font-weight: 500; 
+    margin-top: 5px;
+    color: #B7B7B7;
 }

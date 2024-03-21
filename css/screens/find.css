@@ -43,7 +43,7 @@
 
 .open-post__column {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
 }
 
 .open-post__title {
@@ -60,7 +60,7 @@
 
 .open-post__title,
 .open-post__hashtags {
-    margin-bottom: 5px; /* Spacing between the title and hashtags */
+    margin-bottom: 5px;
 }
 
 .open-post__members {
